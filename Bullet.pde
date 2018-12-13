@@ -1,5 +1,5 @@
-class Spaceship extends Floater  
-{  
+class Bullet extends Floater
+{
   public void setX(int x)
   {
     myCenterX = x;
@@ -40,24 +40,16 @@ class Spaceship extends Floater
   {
     return myPointDirection;
   }
-  public Spaceship()
+  
+  public Bullet()
   {
     myCenterX = myCenterY = 225;
-    corners = 4;
-    xCorners = new int[corners];
-    yCorners = new int[corners];
-    xCorners[0] = -8;
-    yCorners[0] = -8;
-    xCorners[1] = 16;
-    yCorners[1] = 0;
-    xCorners[2] = -8;
-    yCorners[2] = 8;
-    xCorners[3] = -2;
-    yCorners[3] = 0;
+    myDirectionX = (int)(5*Math.cos(dRadians) +;
+    myDirectionY = (int)(5*Math.sin(dRadians) + ;
   }
-  public void show ()  //Draws the floater at the current position  
-  { 
-    myColor = color(255);
+  
+  public void show()
+  {
     fill(myColor);   
     stroke(myColor);    
     
@@ -82,4 +74,5 @@ class Spaceship extends Floater
     rotate(-1*dRadians);
     translate(-1*(float)myCenterX, -1*(float)myCenterY);
   }
+  
 }
