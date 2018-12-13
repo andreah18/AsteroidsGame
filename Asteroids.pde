@@ -43,12 +43,14 @@ class Asteroid extends Floater
   protected int rotSpeed;
   public Asteroid() {
      int i = 0;
-    for(double angle = 0; angle < Math.PI*2; angle+=Math.PI/3){
-      xCorners[i] = (int)(Math.random()*5*Math.cos(angle));
-      yCorners[i] = (int)(Math.random()*5*Math.sin(angle));
-    }
+    //for(double angle = 0; angle < Math.PI*2; angle+=Math.PI/3){
+    //  xCorners[i] = (int)(Math.random()*5*Math.cos(angle));
+    //  yCorners[i] = (int)(Math.random()*5*Math.sin(angle));
+    //}
     myCenterX = myCenterY = 250;
-    myDirectionX = myDirectionY = 0;
+    myDirectionX = (Math.random()*5-2);
+    myDirectionY = (Math.random()*5-2);
+    rotSpeed = (int)(Math.random()*6)-3;
     myColor = color(196, 184, 184);
     
     corners = 6;

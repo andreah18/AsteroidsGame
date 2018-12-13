@@ -43,9 +43,9 @@ class Bullet extends Floater
   
   public Bullet()
   {
-    myCenterX = myCenterY = 225;
-    myDirectionX = (int)(5*Math.cos(dRadians) +;
-    myDirectionY = (int)(5*Math.sin(dRadians) + ;
+    //myCenterX = myCenterY = 225;
+    //myDirectionX = (int)(5*Math.cos(dRadians) +;
+    //myDirectionY = (int)(5*Math.sin(dRadians) + ;
   }
   
   public void show()
