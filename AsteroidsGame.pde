@@ -30,4 +30,5 @@ public void draw()
      //dwight.remove(i);
   }
   jim.show();
+
 }
